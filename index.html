@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vegibit Vue Tutorial</title>
+  </head>
+  <body>
+    <!-- This div has been Vueified -->
+    <div id="myvueinstance" class="container">
+      <div class="row">UI element</div>
+        <input type="text" v-model="textinput" class="form-control">
+        <p> </p>
+        <div class="row">Vue Instance data object</div>
+        {{ $data | json }}
+      </div>
+    </div>
+  </body>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</html>
